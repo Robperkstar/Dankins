@@ -1,0 +1,28 @@
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+               <ul class="breadcrumb">
+                   <li><a href="index.html">Home</a></li>
+                   <li class="active">Photos</li>
+               </ul>
+             <li class="media" ng-repeat="photo in photos">
+                    <div class="media-left media-middle">
+                        <a>
+                        <img class="media-object img-thumbnail"
+                        ng-src={{photo.image}} alt="pics" height = 1000 width =600>
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">{{photo.name}}</h3>
+                        
+                    </div>
+                </li>
+                
+            
+
+            </div>
+            </div>
+        </div>
+
+    

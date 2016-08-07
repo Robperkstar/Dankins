@@ -1,0 +1,70 @@
+
+    <div class="container">
+        <div class="row row-content">
+           
+                <div class="media" >
+                    
+                    <div class="media-right media-middle">
+                        <a href="index.html#/aboutus">
+                        <img class="media-object img-thumbnail" 
+                        ng-src="images/bestone.jpg"height=200 width=950 allign="middle" margin-left:auto margin-right:auto alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align=center>This Month's promotion</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+                <div ng-if="!showProgram">
+                    <h3>{{message}}</h3>
+                </div>
+                <div class="media" ng-if="showProgram">
+                    <div class="media-left media-middle">
+                        <a href="index.html#/programlist">
+                        <img class="media-object img-thumbnail" 
+                        ng-src={{program.image}} alt="program">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">{{program.name}} 
+                        <span class="label label-danger">{{program.label}}</span> 
+                        <span class="badge">{{program.price/100 | currency}}</span></h2>
+                        <p>{{program.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Meet our CEO</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+                <div ng-if="!showLeader">
+                    <h3>{{message}}</h3>
+                </div>
+                <div class="media" ng-if="showLeader">
+                    <div class="media-left media-middle">
+                        <a>
+                        <img class="media-object img-thumbnail"
+                        ng-src={{leader.image}} alt="Peter Pan">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">{{leader.name}}
+                        <small>{{leader.designation}}</small></h3>
+                        <p>{{leader.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    
